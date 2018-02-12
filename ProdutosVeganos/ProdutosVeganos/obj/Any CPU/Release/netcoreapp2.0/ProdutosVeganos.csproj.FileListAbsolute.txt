@@ -1,0 +1,11 @@
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\bin\Any CPU\Release\netcoreapp2.0\ProdutosVeganos.deps.json
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\bin\Any CPU\Release\netcoreapp2.0\ProdutosVeganos.runtimeconfig.json
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\bin\Any CPU\Release\netcoreapp2.0\ProdutosVeganos.runtimeconfig.dev.json
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\bin\Any CPU\Release\netcoreapp2.0\ProdutosVeganos.dll
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\bin\Any CPU\Release\netcoreapp2.0\ProdutosVeganos.pdb
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\obj\Any CPU\Release\netcoreapp2.0\ProdutosVeganos.csprojResolveAssemblyReference.cache
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\obj\Any CPU\Release\netcoreapp2.0\ProdutosVeganos.csproj.CoreCompileInputs.cache
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\obj\Any CPU\Release\netcoreapp2.0\ProdutosVeganos.AssemblyInfoInputs.cache
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\obj\Any CPU\Release\netcoreapp2.0\ProdutosVeganos.AssemblyInfo.cs
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\obj\Any CPU\Release\netcoreapp2.0\ProdutosVeganos.dll
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\obj\Any CPU\Release\netcoreapp2.0\ProdutosVeganos.pdb

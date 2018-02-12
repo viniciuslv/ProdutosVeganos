@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Detalhe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Ingrediente
+
+<h2>Detalhe Ingrediente</h2>
+<hr />
+<div class="row">
+    <div class="col-md-3">Id</div>
+    <div class="col-md-9">@Model.Id</div>
+</div>
+<div class="row">
+    <div class="col-md-3">Nome</div>
+    <div class="col-md-9">@Model.Nome</div>
+</div>
+<div class="row">
+    <div class="col-md-3">Descrição</div>
+    <div class="col-md-9">@Model.Descricao</div>
+</div>
+<div class="row">
+    <div class="col-md-3">Produtos</div>
+    <div class="col-md-9">@Model.Produtos.Count</div>
+</div>
+<div class="row">
+    <div class="col-md-3">Vegano</div>
+    <div class="col-md-9">@Model.Vegano</div>
+</div>
+<div class="row">
+    <div class="col-md-3">Glutem</div>
+    <div class="col-md-9">@Model.TemGlutem</div>
+</div>
+<div class="row">
+    <div class="col-md-3">Lactose</div>
+    <div class="col-md-9">@Model.TemLactose</div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+            <a asp-area="" asp-controller="Ingredientes" asp-action="Index" class="btn btn-success">Voltar</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<h3>Bem vindo ao produtos veganos</h3>
+<p>Um projeto aberto para cadastro e consulta de produtos e ingredientes</p>
+
+<ul >
+    <li >
+        Produtos:
+        <ul>
+            <li>
+                <a asp-area="" asp-controller="Produtos" asp-action="Index">Consultar</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Produtos" asp-action="Cadastro">Incluir</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Ingredientes:
+        <ul>
+            <li>
+                <a asp-area="" asp-controller="Ingredientes" asp-action="Index">Consultar</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Ingredientes" asp-action="Cadastro">Incluir</a>
+            </li>
+        </ul>
+    </li>
+    <li >
+        <a asp-area="" asp-controller="Home" asp-action="Sobre">Mais sobre quem somos e nosso projeto</a>
+    </li>
+</ul>

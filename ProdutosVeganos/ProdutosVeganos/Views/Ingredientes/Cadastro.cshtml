@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Cadastro de Ingredientes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Ingrediente
+<h2>Cadastro Ingrediente</h2>
+<div class="panel panel-default">
+    <div class="panel-body">
+
+        <form role="form" method="post" asp-action="Cadastro" >
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="hidden" asp-for="Id" />
+                    <div class="form-group">
+                        <label class="control-label" for="nomeCliente">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite o nome do ingrediente" asp-for="Nome">
+                        <span asp-validation-for="Nome" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="email">Descrição</label>
+                        <input type="text" class="form-control" id="descricao" placeholder="Digite a descrição" asp-for="Descricao">
+                        <span asp-validation-for="Descricao" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="control-label" for="email">É Vegano?</label>
+                        <select asp-for="Vegano">
+                            <option value="0">Sim</option>
+                            <option value="1">Talvez</option>
+                            <option value="2">Não</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="checkbox-inline" for="temLactose">
+                            <input type="checkbox" class="checkbox" id="temLactose" placeholder="Selecione se tem lactose" asp-for="TemLactose">
+                            Tem Lactose?
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="checkbox-inline" for="temGlutem">
+                            <input type="checkbox" class="checkbox" id="temGlutem" placeholder="Selecione se tem glutem" asp-for="TemGlutem">
+                            Tem Glutem?
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success">Salvar</button>
+                        <a asp-area="" asp-controller="Ingredientes" asp-action="Index" class="btn btn-success">Cancelar</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+

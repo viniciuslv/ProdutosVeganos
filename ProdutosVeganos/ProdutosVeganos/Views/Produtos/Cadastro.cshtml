@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Cadastro de Produto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Produto
+<h2>Cadastro Produto</h2>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <form role="form" method="post" asp-action="Cadastro">
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="hidden" asp-for="Id" />
+                    <div class="form-group">
+                        <label class="control-label" for="nomeCliente">Código de Barra</label>
+                        <input type="text" class="form-control" id="codigoBarra" placeholder="Digite o código do ingrediente" asp-for="CodigoBarra">
+                        <span asp-validation-for="CodigoBarra" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="nomeCliente">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite o nome do ingrediente" asp-for="Nome">
+                        <span asp-validation-for="Nome" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="descrição">Descrição</label>
+                        <input type="text" class="form-control" id="descricao" placeholder="Digite a descrição" asp-for="Descricao">
+                        <span asp-validation-for="Descricao" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="site">Site</label>
+                        <input type="url" class="form-control" id="site" placeholder="Digite a descrição" asp-for="Site">
+                        <span asp-validation-for="Site" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <h4>Contém</h4>
+                        <label class="checkbox-inline" for="contemDerivadosLeite">
+                            <input type="checkbox" class="checkbox" id="contemDerivadosLeite" placeholder="Selecione se tem derivados do leite" asp-for="ContemDerivadosLeite">
+                            Derivados de Leite
+                        </label>
+                        <label class="checkbox-inline" for="contemLactose">
+                            <input type="checkbox" class="checkbox" id="contemLactose" placeholder="Selecione se tem lactose" asp-for="ContemLactose">
+                            Lactose
+                        </label>
+                        <label class="checkbox-inline" for="contemGlutem">
+                            <input type="checkbox" class="checkbox" id="contemGlutem" placeholder="Selecione se tem glutem" asp-for="ContemGlutem">
+                            Glutem
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <h4>Pode Conter</h4>
+                        <label class="checkbox-inline" for="podeConterAnimais">
+                            <input type="checkbox" class="checkbox" id="podeConterAnimais" placeholder="Selecione se pode conter derivados de origem animal" asp-for="PodeConterAnimais">
+                            Derivados de origem animal
+                        </label>
+                        <label class="checkbox-inline" for="podeConterDerivadosLeite">
+                            <input type="checkbox" class="checkbox" id="podeConterDerivadosLeite" placeholder="Selecione se tem lactose" asp-for="PodeConterDerivadosLeite">
+                            Derivados de Leite
+                        </label>
+                        <label class="checkbox-inline" for="podeConterLactose">
+                            <input type="checkbox" class="checkbox" id="podeConterLactose" placeholder="Selecione se tem lactose" asp-for="PodeConterLactose">
+                            Lactose
+                        </label>
+                        <label class="checkbox-inline" for="podeConterGlutem">
+                            <input type="checkbox" class="checkbox" id="podeConterGlutem" placeholder="Selecione se tem lactose" asp-for="PodeConterGlutem">
+                            Glutem
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success" asp-action="IngredientesProduto" >Cadastrar Ingredientes</button>
+                        <button type="submit" class="btn btn-success" asp-action="Cadastro">Finalizar</button>
+                        <a asp-area="" asp-controller="Produtos" asp-action="Index" class="btn btn-success">Cancelar</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+

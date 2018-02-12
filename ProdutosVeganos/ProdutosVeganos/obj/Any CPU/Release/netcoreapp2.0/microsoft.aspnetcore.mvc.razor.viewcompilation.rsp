@@ -1,0 +1,18 @@
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos
+--output-path=obj\Any CPU\Release\netcoreapp2.0\
+--application-name=ProdutosVeganos
+--content-root=C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos
+--file=C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\Views\Home\Index.cshtml
+--file=C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\Views\Home\Sobre.cshtml
+--file=C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\Views\Ingredientes\Cadastro.cshtml
+--file=C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\Views\Ingredientes\Detalhe.cshtml
+--file=C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\Views\Ingredientes\Index.cshtml
+--file=C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\Views\Produtos\Cadastro.cshtml
+--file=C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\Views\Produtos\Detalhe.cshtml
+--file=C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\Views\Produtos\Index.cshtml
+--file=C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\Views\Produtos\IngredientesProduto.cshtml
+--file=C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\Views\Shared\Error.cshtml
+--file=C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\Views\Shared\_Layout.cshtml
+--file=C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\Views\_ViewImports.cshtml
+--file=C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos\Views\_ViewStart.cshtml

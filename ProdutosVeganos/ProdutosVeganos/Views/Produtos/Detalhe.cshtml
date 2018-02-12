@@ -1,0 +1,108 @@
+﻿@{
+    ViewData["Title"] = "Detalhe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Produto
+
+<h2>Detalhe Produto</h2>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <b>Codigo de Barra:</b> @Model.CodigoBarra
+        <br />
+        <b>Nome:</b> @Model.Nome
+        <br />
+        <b>Descrição:</b> @Model.Descricao
+        <br />
+        <b>Site:</b> <a href="@Model.Site">@Model.Site</a>
+    </div>
+    <div class="col-md-3">
+        <h4>Contém</h4>
+        @if (Model.ContemDerivadosLeite)
+        {
+        <span>Derivados de leite</span><br>
+        }
+        @if (Model.ContemLactose)
+        {
+        <span>Lactose</span><br>
+        }
+        @if (Model.ContemGlutem)
+        {
+        <span>Glutem</span><br>
+        }
+    </div>
+    <div class="col-md-3">
+        <h4>Pode Conter</h4>
+        @if (Model.PodeConterAnimais)
+        {
+        <span>Derivados de animais</span><br>
+        }
+        @if (Model.PodeConterDerivadosLeite)
+        {
+        <span>Derivados de leite</span><br>
+        }
+        @if (Model.PodeConterLactose)
+        {
+        <span>Lactose</span><br>
+        }
+        @if (Model.PodeConterGlutem)
+        {
+        <span>Glutem</span><br>
+        }
+    </div>
+</div>
+
+<hr />
+<h2>
+    <span class="glyphicon glyphicon-@(Model.Ingredientes.Count(ip => ip.Ingrediente.Vegano == Vegan.Não) > 0 ? "remove alert-danger": Model.Ingredientes.Count(ip => ip.Ingrediente.Vegano == Vegan.Talvez) > 0 ? "alert alert-warning": "ok alert-success")"></span> Ingredientes
+</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <h3 class="alert alert-success">Veganos</h3>
+        <table id="tblVeganos" class="table table-striped table-bordered" cellspacing="0">
+            <tbody>
+                @foreach (var ingrediente in Model.Ingredientes.Where(ip => ip.Ingrediente.Vegano == Vegan.Sim))
+                {
+                    <tr>
+                        <td><a asp-area="" asp-controller="Ingredientes" asp-action="Detalhe" asp-route-id="@ingrediente.IngredienteId">@ingrediente.Ingrediente.Nome</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4">
+        <h3 class="alert alert-warning">Talvez</h3>
+        <table id="tblTalvez" class="table table-striped table-bordered" cellspacing="0">
+            <tbody>
+                @foreach (var ingrediente in Model.Ingredientes.Where(ip => ip.Ingrediente.Vegano == Vegan.Talvez))
+                {
+                    <tr>
+                        <td><a asp-area="" asp-controller="Ingredientes" asp-action="Detalhe" asp-route-id="@ingrediente.IngredienteId">@ingrediente.Ingrediente.Nome</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4">
+        <h3 class="alert alert-danger">Não veganos</h3>
+        <table id="tblNao" class="table table-striped table-bordered" cellspacing="0">
+            <tbody>
+                @foreach (var ingrediente in Model.Ingredientes.Where(ip => ip.Ingrediente.Vegano == Vegan.Não))
+                {
+                    <tr>
+                        <td><a asp-area="" asp-controller="Ingredientes" asp-action="Detalhe" asp-route-id="@ingrediente.IngredienteId">@ingrediente.Ingrediente.Nome</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+            <a asp-area="" asp-controller="Produtos" asp-action="Index" class="btn btn-success">Voltar</a>
+        </div>
+    </div>
+</div>

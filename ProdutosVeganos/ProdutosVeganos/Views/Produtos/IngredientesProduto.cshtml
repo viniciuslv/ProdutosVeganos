@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "IngredientesProduto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Produto
+<h2>Ingredientes Produto @Model.Nome</h2>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <form role="form" method="post" asp-action="SalvarIngredientes">
+            <div class="row">
+                <div class="col-md-6">
+                    <table id="tabelaIngredientes" class="table table-striped table-bordered" cellspacing="0" produto-id="@Model.Id">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Excluir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var ip in Model.Ingredientes)
+                            {
+                                <tr ingrediente-id="@ip.IngredienteId" >
+                                    <td td-nome>@ip.Ingrediente.Nome</td>
+                                    <td>
+                                        <a class="btn btn-info btn-sm" href="#" onclick="ingredientesProduto.removerIngrediente(this)">
+                                            <span class="glyphicon glyphicon-remove"></span> Excluir
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <label for="ingredientes">Ingrediente: </label>
+                        <input id="ingredientes" oninput="ingredientesProduto.digitarIngrediente(this);">
+                        <a class="btn btn-info btn-sm" asp-controller="Ingredientes" asp-action="Cadastro" target="_blank" >
+                            <span class="glyphicon glyphicon-pencil"></span> Novo
+                        </a>
+                    </div>
+                    <table id="tabelaPesquisa" class="table table-striped table-bordered" cellspacing="0" produto-id="@Model.Id">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Adicionar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <a class="btn btn-info btn-sm" asp-controller="Produtos" asp-action="Detalhe" asp-route-id="@Model.CodigoBarra">
+                            <span class="glyphicon glyphicon-search"></span> Finalizar
+                        </a>
+                        <a class="btn btn-info btn-sm" asp-controller="Produtos" asp-action="Cadastro" asp-route-id="@Model.CodigoBarra">
+                            <span class="glyphicon glyphicon-pencil"></span> Voltar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="~/js/IngredientesProduto.js"></script>
+}
+

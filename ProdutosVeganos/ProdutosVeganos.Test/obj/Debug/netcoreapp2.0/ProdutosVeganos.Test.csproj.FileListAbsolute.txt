@@ -1,0 +1,16 @@
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos.Test\bin\Debug\netcoreapp2.0\ProdutosVeganos.Test.deps.json
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos.Test\bin\Debug\netcoreapp2.0\ProdutosVeganos.Test.runtimeconfig.json
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos.Test\bin\Debug\netcoreapp2.0\ProdutosVeganos.Test.runtimeconfig.dev.json
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos.Test\bin\Debug\netcoreapp2.0\ProdutosVeganos.Test.dll
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos.Test\bin\Debug\netcoreapp2.0\ProdutosVeganos.Test.pdb
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos.Test\obj\Debug\netcoreapp2.0\ProdutosVeganos.Test.csprojResolveAssemblyReference.cache
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos.Test\obj\Debug\netcoreapp2.0\ProdutosVeganos.Test.csproj.CoreCompileInputs.cache
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos.Test\obj\Debug\netcoreapp2.0\ProdutosVeganos.Test.AssemblyInfoInputs.cache
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos.Test\obj\Debug\netcoreapp2.0\ProdutosVeganos.Test.AssemblyInfo.cs
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos.Test\obj\Debug\netcoreapp2.0\ProdutosVeganos.Test.dll
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos.Test\obj\Debug\netcoreapp2.0\ProdutosVeganos.Test.pdb
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos.Test\bin\Debug\netcoreapp2.0\ProdutosVeganos.dll
+C:\Users\vinic\source\repos\ProdutosVeganos\ProdutosVeganos.Test\bin\Debug\netcoreapp2.0\ProdutosVeganos.pdb

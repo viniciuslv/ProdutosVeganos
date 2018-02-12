@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProdutosVeganos", "ProdutosVeganos\ProdutosVeganos.csproj", "{60BB2A09-CDD0-40F5-AB64-F7A7939DA7CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProdutosVeganos.Test", "ProdutosVeganos.Test\ProdutosVeganos.Test.csproj", "{86EF7FFD-3405-4F11-80C9-6ECC5127ECBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60BB2A09-CDD0-40F5-AB64-F7A7939DA7CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60BB2A09-CDD0-40F5-AB64-F7A7939DA7CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60BB2A09-CDD0-40F5-AB64-F7A7939DA7CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60BB2A09-CDD0-40F5-AB64-F7A7939DA7CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86EF7FFD-3405-4F11-80C9-6ECC5127ECBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86EF7FFD-3405-4F11-80C9-6ECC5127ECBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86EF7FFD-3405-4F11-80C9-6ECC5127ECBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86EF7FFD-3405-4F11-80C9-6ECC5127ECBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C50A6DD5-8F06-4987-A679-17640451A01E}
+	EndGlobalSection
+EndGlobal
